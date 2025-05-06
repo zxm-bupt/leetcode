@@ -1,4 +1,7 @@
 package main
 
+import "testing"
 
-func 
+func TestMain(m *testing.T) {
+	main()
+}

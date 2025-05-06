@@ -5,7 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func resverseList(head *ListNode) *ListNode {
+func ResverseList(head *ListNode) *ListNode {
 	if head.Next == nil {
 		return head
 	}
