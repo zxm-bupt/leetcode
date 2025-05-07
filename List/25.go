@@ -19,6 +19,7 @@ func ReverseKGroup(head *ListNode, k int) *ListNode {
 				current = current.Next
 			}
 			current.Next = head
+			count = 0
 		} else {
 			head = head.Next
 		}
