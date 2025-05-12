@@ -2,9 +2,16 @@ package main
 
 import (
 	"fmt"
-	"leetcode/day"
+	"leetcode/List"
 )
 
 func main() {
-	fmt.Println(day.FindEvenNumbers([]int{0, 1, 2, 8, 2, 7, 5, 0, 8, 9, 5, 9, 8, 9, 0, 5, 0, 5, 8, 0, 5, 1, 8, 6, 7, 2, 2, 0, 4, 8, 2, 9, 7, 3, 8, 6, 3, 8, 5, 2, 4, 6, 2, 0, 7, 4, 2, 3, 3, 8, 1, 7, 3, 5, 3, 8, 1, 8, 4, 0, 9, 7, 1, 7, 1, 8, 9, 5, 0, 1, 5, 0, 2, 2, 2, 7, 6, 0, 2, 7, 2, 3, 9, 3, 4, 2, 5, 5}))
+	list := List.ListNode{Val: 1}
+	list.Next = &List.ListNode{Val: 2}
+	list.Next.Next = &List.ListNode{Val: 3}
+	list2 := List.ListNode{Val: 1}
+	list2.Next = &List.ListNode{Val: 2}
+	list2.Next.Next = &List.ListNode{Val: 3}
+	list2.Next.Next.Next = list.Next
+	fmt.Print(List.GetIntersectionNode(&list, &list2).Val) // 3
 }
