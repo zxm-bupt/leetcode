@@ -1,11 +1,13 @@
 package main
 
-import "leetcode/day"
+import "leetcode/List"
 
 func main() {
 	// Example usage
-	s := "jqktcurgdvlibczdsvnsg"
-	t := 7517
-	result := day.LengthAfterTransformations(s, t)
-	println(result) // Output: 6
+	head := &List.ListNode{Val: 1}
+	List.ReorderList(head)
+	for node := head; node != nil; node = node.Next {
+		println(node.Val)
+	}
+	// Output: 1 -> 4 -> 2 -> 3
 }
