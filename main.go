@@ -2,12 +2,19 @@ package main
 
 import (
 	"fmt"
-	"leetcode/sort"
+	"leetcode/List"
 )
 
 func main() {
 	// Example usage
-	arr := []int{10, 7, 8, 9, 1, 5}
-	sort.QuicSort(arr)
-	fmt.Println("Sorted array:", arr)
+	head := &List.ListNode{Val: 4}
+	head.Next = &List.ListNode{Val: 2}
+	head.Next.Next = &List.ListNode{Val: 1}
+	head.Next.Next.Next = &List.ListNode{Val: 3}
+	sortedHead := List.SortList(head)
+	// Print sorted list
+	for sortedHead != nil {
+		fmt.Println(sortedHead.Val)
+		sortedHead = sortedHead.Next
+	}
 }
