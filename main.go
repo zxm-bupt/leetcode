@@ -1,20 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/List"
-)
+import "leetcode/day"
 
 func main() {
 	// Example usage
-	head := &List.ListNode{Val: 4}
-	head.Next = &List.ListNode{Val: 2}
-	head.Next.Next = &List.ListNode{Val: 1}
-	head.Next.Next.Next = &List.ListNode{Val: 3}
-	sortedHead := List.SortList(head)
-	// Print sorted list
-	for sortedHead != nil {
-		fmt.Println(sortedHead.Val)
-		sortedHead = sortedHead.Next
+	words := []string{"c"}
+	groups := []int{0}
+
+	// Call the function
+	result := day.GetLongestSubsequence2(words, groups)
+	// Print the result
+	for _, word := range result {
+		println(word)
 	}
 }
