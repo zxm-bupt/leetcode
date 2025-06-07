@@ -2,15 +2,13 @@ package main
 
 import (
 	"fmt"
-	"leetcode/List"
+	"leetcode/day"
 )
 
 func main() {
-	node := &List.ListNode{Val: 1}
-	node.Next = &List.ListNode{Val: 2}
-	node.Next.Next = &List.ListNode{Val: 3}
-	node.Next.Next.Next = &List.ListNode{Val: 4}
-	node.Next.Next.Next.Next = &List.ListNode{Val: 5}
+	nums := []int{1, 2, 1}
+	k := 3
+	edges := [][]int{{0, 1}, {0, 2}}
+	fmt.Println(day.MaximumValueSum(nums, k, edges))
 
-	fmt.Println(List.ReverseBetween(node, 2, 4))
 }
