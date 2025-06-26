@@ -3,8 +3,11 @@ package main
 import "leetcode/day"
 
 func main() {
-	nums := []int{2, 4, 2, 2, 5, 2}
-	k := 2
-	result := day.PartitionArray(nums, k)
-	println(result) // Output: 2
+	s := "00101001"
+	k := 1
+
+	result := day.LongestSubsequence(s, k)
+
+	println(result) // Output the result
+
 }
