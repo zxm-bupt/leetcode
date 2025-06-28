@@ -3,11 +3,12 @@ package main
 import "leetcode/day"
 
 func main() {
-	s := "00101001"
-	k := 1
+	nums := []int{3, 1, 2, 4, 5}
 
-	result := day.LongestSubsequence(s, k)
+	k := 3
 
-	println(result) // Output the result
-
+	res := day.MaxSubsequence(nums, k)
+	for _, v := range res {
+		println(v)
+	}
 }
