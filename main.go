@@ -3,12 +3,11 @@ package main
 import "leetcode/day"
 
 func main() {
-	nums := []int{3, 1, 2, 4, 5}
-
-	k := 3
-
-	res := day.MaxSubsequence(nums, k)
-	for _, v := range res {
-		println(v)
+	events := [][]int{
+		{1, 5}, {1, 5}, {1, 5}, {2, 3}, {2, 3},
 	}
+
+	result := day.MaxEvents(events)
+	println(result) // Output: 4
+
 }
