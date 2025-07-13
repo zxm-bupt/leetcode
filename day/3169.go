@@ -1,3 +1,7 @@
+package day
+
+import "sort"
+
 func countDays(days int, meetings [][]int) int {
 
 	meetings = mergeSlice(meetings)

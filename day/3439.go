@@ -1,6 +1,6 @@
 package day
 
-func maxFreeTime(eventTime int, k int, startTime []int, endTime []int) int {
+func maxFreeTime1(eventTime int, k int, startTime []int, endTime []int) int {
 	sum := make([]int, len(startTime)+1)
 	for i := 1; i < len(startTime)+1; i++ {
 		time := endTime[i-1] - startTime[i-1]
