@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	nums := []int{558, 508, 782, 32, 187, 103, 370, 607, 619, 267, 984, 10}
-	res := day.MaximumUniqueSubarray(nums)
+	nums := []int{311155, 311155, 311155, 311155, 311155, 311155, 311155, 311155, 201191, 311155}
+	res := day.LongestSubarray(nums)
 	fmt.Println(res)
 }
