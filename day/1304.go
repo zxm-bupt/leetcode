@@ -1,3 +1,5 @@
+package day
+
 func sumZero(n int) []int {
 	res := []int{}
 	if n%2 != 0 {
