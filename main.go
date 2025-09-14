@@ -6,9 +6,8 @@ import (
 )
 
 func main() {
-	n := 6
-	delay := 2
-	forget := 4
-	res := day.PeopleAwareOfSecret(n, delay, forget)
+	wordlist := []string{"KiTe", "kite", "hare", "Hare"}
+	queries := []string{"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"}
+	res := day.Spellchecker(wordlist, queries)
 	fmt.Println(res)
 }
