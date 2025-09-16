@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	wordlist := []string{"KiTe", "kite", "hare", "Hare"}
-	queries := []string{"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"}
-	res := day.Spellchecker(wordlist, queries)
+	nums := []int{287, 41, 49, 287, 899, 23, 23, 20677, 5, 825}
+	res := day.ReplaceNonCoprimes(nums)
 	fmt.Println(res)
 }
