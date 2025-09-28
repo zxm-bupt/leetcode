@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	triangle := [][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}
-	res := day.MinimumTotal(triangle)
+	points := [][]int{{0, 0}, {0, 1}, {1, 0}, {0, 2}, {2, 0}}
+	res := day.LargestTriangleArea(points)
 	fmt.Println(res)
 }
