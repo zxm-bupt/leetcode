@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	points := [][]int{{0, 0}, {0, 1}, {1, 0}, {0, 2}, {2, 0}}
-	res := day.LargestTriangleArea(points)
-	fmt.Println(res)
+	rains := []int{1, 2, 0, 1, 2}
+	res := day.AvoidFlood(rains)
+	fmt.Print(res)
 }
