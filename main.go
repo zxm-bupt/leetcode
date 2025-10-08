@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-	rains := []int{1, 2, 0, 1, 2}
-	res := day.AvoidFlood(rains)
+	spells := []int{3, 1, 2}
+	potions := []int{8, 5, 8}
+	success := 16
+	res := day.SuccessfulPairs(spells, potions, int64(success))
 	fmt.Print(res)
 }
