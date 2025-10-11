@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	spells := []int{3, 1, 2}
-	potions := []int{8, 5, 8}
-	success := 16
-	res := day.SuccessfulPairs(spells, potions, int64(success))
+	powers := []int{7, 1, 6, 3}
+	res := day.MaximumTotalDamage(powers)
 	fmt.Print(res)
 }

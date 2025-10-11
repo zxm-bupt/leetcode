@@ -25,7 +25,7 @@ func avoidFlood(rains []int) []int {
 					return []int{}
 				}
 				ans[st[it]] = rain
-				copy(st[it:len(st)-1], st[it+1:len(st)])
+				copy(st[it:len(st)-1], st[it+1:])
 				st = st[:len(st)-1]
 			}
 			mp[rain] = i
