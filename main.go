@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	powers := []int{7, 1, 6, 3}
-	res := day.MaximumTotalDamage(powers)
+	words := []string{"abba", "baba", "bbaa", "cd", "cd"}
+	res := day.RemoveAnagrams(words)
 	fmt.Print(res)
 }
