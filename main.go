@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	words := []string{"abba", "baba", "bbaa", "cd", "cd"}
-	res := day.RemoveAnagrams(words)
+	nums := []int{-15, 9}
+	k := 1
+	res := day.HasIncreasingSubarrays(nums, k)
 	fmt.Print(res)
 }
