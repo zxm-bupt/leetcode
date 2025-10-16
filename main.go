@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	nums := []int{-15, 9}
-	k := 1
-	res := day.HasIncreasingSubarrays(nums, k)
+	nums := []int{0, -3}
+	value := 4
+	res := day.FindSmallestInteger(nums, value)
 	fmt.Print(res)
 }
